@@ -1,15 +1,17 @@
 ---
-import suplogImage from '../assets/projects/suplog.png';
-import cumbucaImage from '../assets/projects/cumbuca.png';
-import dojoImage from '../assets/projects/dojo.png';
 
+const projectImages = {
+  suplog: 'https://raw.githubusercontent.com/pmenezesdev/pmenezesdev.github.io/main/src/assets/projects/suplog.png',
+  cumbuca: 'https://raw.githubusercontent.com/pmenezesdev/pmenezesdev.github.io/main/src/assets/projects/cumbuca.png',
+  dojo: 'https://raw.githubusercontent.com/pmenezesdev/pmenezesdev.github.io/main/src/assets/projects/dojo.png',
+};
 const whatsapp = "https://wa.me/5581989025602?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20R.Kode%20e%20quero%20conversar%20sobre%20um%20projeto.";
 const projects = [
   {
     title: 'SUPLOG — Comércio Exterior',
     category: 'Landing page',
     description: 'Site comercial com foco em credibilidade, serviços e geração de contato direto com o time de vendas.',
-    image: suplogImage.src,
+    image: projectImages.suplog,
     href: 'https://pmenezesdev.github.io/suplog/',
     status: 'Projeto publicado',
   },
@@ -17,7 +19,7 @@ const projects = [
     title: 'Cumbuca — Soparia',
     category: 'Cardápio digital',
     description: 'Experiência mobile para catálogo, escolha de produtos e pedido simplificado pelo WhatsApp.',
-    image: cumbucaImage.src,
+    image: projectImages.cumbuca,
     href: 'https://pmenezesdev.github.io/cumbuca-soparia/',
     status: 'Projeto publicado',
   },
@@ -25,7 +27,7 @@ const projects = [
     title: 'DojoControl — Nindô-Kan',
     category: 'Sistema interno',
     description: 'Painel de gestão para alunos, turmas, mensalidades, graduações e rotina administrativa.',
-    image: dojoImage.src,
+    image: projectImages.dojo,
     href: '',
     status: 'Demonstração visual',
   },
@@ -105,7 +107,7 @@ const projects = [
             </div>
             <div class="visual" aria-label="Prévia de projeto desenvolvido pela R.Kode">
               <div class="visual-glow"></div>
-              <div class="device"><img src={suplogImage.src} alt="Prévia da landing page SUPLOG" /></div>
+              <div class="device"><img src={projectImages.suplog} alt="Prévia da landing page SUPLOG" /></div>
               <div class="floating float-a"><span>Projetos web</span><b>R$ 1.500–2.000</b></div>
               <div class="floating float-b"><span>Entrega pensada para</span><b>resultado</b></div>
             </div>
