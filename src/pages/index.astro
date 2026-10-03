@@ -44,7 +44,7 @@ const projects = [
     <meta property="og:title" content="R.Kode — Soluções digitais que geram resultado" />
     <meta property="og:description" content="Estratégia, design e desenvolvimento para transformar ideias em produtos digitais profissionais." />
     <meta property="og:type" content="website" />
-    <link rel="icon" type="image/png" href="/rkode/brand/rkode-mark-transparent.png" />
+    <link rel="icon" type="image/png" href="/rkode/brand/rkode-logo.png" />
     <title>R.Kode — Sites, Sistemas e Produtos Digitais</title>
     <style>
       :root{
@@ -70,8 +70,9 @@ const projects = [
       footer{padding:30px 0 48px}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:22px;border-top:1px solid var(--line);color:#7f887c;font-size:12px}.footer-logo{width:160px;opacity:.65}.reveal{opacity:0;transform:translateY(18px);transition:.7s opacity,.7s transform}.reveal.on{opacity:1;transform:none}
 
       /* R.Kode: hero claro inspirado na referência, preservando o restante da página. */
-      .brand-wordmark,.footer-wordmark{display:inline-flex;align-items:center;color:#f5f7f2;font-weight:950;letter-spacing:-.07em;font-size:22px}
-      .brand-wordmark span,.footer-wordmark span{color:var(--accent)}
+      .brand-logo{display:block;width:170px;max-height:52px;object-fit:contain;object-position:left center}
+      .footer-logo{width:190px;max-height:63px;object-fit:contain;opacity:1}
+      @media(max-width:620px){.brand-logo{width:136px;max-height:42px}}
       .hero-wrap .device img{transform:scale(4.2);transform-origin:50% 0}
       .project-shot img{transform:scale(3.7);transform-origin:50% 0}
       .project:hover .project-shot img{transform:scale(3.75)}
@@ -94,7 +95,7 @@ const projects = [
   <body>
     <div class="topbar shell">
       <nav class="nav" aria-label="Navegação principal">
-        <a class="brand-wordmark" href="#top" aria-label="R.Kode — início">R<span>.</span>Kode</a>
+        <a class="brand" href="#top" aria-label="R.Kode — início"><img class="brand-logo" src="/rkode/brand/rkode-logo.png" alt="R.Kode" /></a>
         <div class="links">
           <a href="#servicos">Serviços</a><a href="#projetos">Projetos</a><a href="#processo">Processo</a><a href="#faq">Dúvidas</a>
           <a class="pill" href={whatsapp} target="_blank" rel="noopener">Falar no WhatsApp ↗</a>
@@ -197,7 +198,7 @@ const projects = [
       </section>
     </main>
 
-    <footer><div class="shell footer-row"><div class="footer-wordmark" aria-label="R.Kode">R<span>.</span>Kode</div><div>© 2026 R.Kode. Estratégia, design e desenvolvimento.</div><div>Sites · Sistemas · Automações · Suporte</div></div></footer>
+    <footer><div class="shell footer-row"><img class="footer-logo" src="/rkode/brand/rkode-logo.png" alt="R.Kode" /><div>© 2026 R.Kode. Estratégia, design e desenvolvimento.</div><div>Sites · Sistemas · Automações · Suporte</div></div></footer>
 
     <script is:inline>
       const io = new IntersectionObserver((entries)=>entries.forEach((entry)=>{if(entry.isIntersecting){entry.target.classList.add('on');io.unobserve(entry.target)}}),{threshold:.10});
